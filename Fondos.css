@@ -1,0 +1,30 @@
+body
+{
+  margin: 0;
+}
+main
+{
+    min-height: 100vh;
+    max-width: 100vw;
+
+    /*background-color: PaleVioletRed; /*Establece color de fondo y recibe valores de color*/
+    /*background-image: url("../img/monet.jpg"),url("../img/vanGogh.jfif"); /*Ponermos una imagen de fondo*/
+    /*background-repeat: no-repeat;  /*Podemos poner que la imagen se repita. Prueba con repeat, repeat-x y con repeat-y. Con CSS3 aparecen nuevos valores*/
+    /*background-position: center left, center right; /*Se pueden poner palabras clave o una posición concreta con unidades de medida*/
+	   /*background-attachment: fixed;*/
+
+    overflow-wrap: break-word;
+
+    /*Usando la shorthand*/
+    background: url("../img/monet.jpg") center left no-repeat fixed, url("../img/vanGogh.jpg") center right no-repeat fixed;
+    background-color: PaleVioletRed;
+    background-size: 50% 50%;
+}
+div
+{
+  width: 200px;
+  height: 200px;
+
+  /*Para establecer un gradiente usamos la propiedad bacground-image.*/
+  background-image: linear-gradient(to top, rgba(125,125,125,0.5),rgba(255,255,255,0.5));
+}
